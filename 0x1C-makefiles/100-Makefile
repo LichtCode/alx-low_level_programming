@@ -1,4 +1,5 @@
-# Your Makefile should not compile if the header file m.h is missing
+# Your Makefile should not compile if the header
+# file m.h is missing
 
 C = gcc
 SRC = main.c school.c
