@@ -1,15 +1,16 @@
 # rules: all, clean, oclean, fclean, re
-# variables: CC, SRC, OBJ, NAME, RM
-# RM: the program to delete files
+# variables: CC, SRC, OBJ, NAME, RM, CFLAGS
+# CFLAGS: -Wall -Werror -Wextra -pedantic
 
 CC = gcc
 SRC = main.c school.c
 OBJ = $(SRC:%.c=%.o) 
 NAME = school
 RM = rm -f
+CFLAGS = -Wall -Werror -Wextra -pedantic
 
 all: $(OBJ)
-	$(CC) $(OBJ) -o $(NAME)
+	$(CC) $(CLFAGS) $(OBJ) -o $(NAME)
 
 clean:
 	$(RM) *~ $(NAME)
