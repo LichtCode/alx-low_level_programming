@@ -1,0 +1,22 @@
+# rules: all, clean, oclean, fclean, re
+# variables: CC, SRC, OBJ, NAME, RM
+# RM: the program to delete files
+
+CC = gcc
+SRC = main.c school.c
+OBJ = $(SRC:.c=.o) 
+NAME = school
+RM = rm -f
+
+all: $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
+
+clean:
+	$(RM) *~ $(NAME)
+
+oclean:
+	$(RM) $(OBJ)
+
+fclean: clean oclean
+
+re: fclean all
