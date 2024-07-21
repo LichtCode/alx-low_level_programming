@@ -1,7 +1,8 @@
 #include "search_algos.h"
 
 /**
-  * _binary_search - Performs a binary search for a value in a sorted integer array.
+  * _binary_search - Performs a binary search for a value in a
+  	sorted integer array.
   * @array: Pointer to the first element of the array to search.
   * @left: Starting index of the subarray to search.
   * @right: Ending index of the subarray to search.
@@ -40,7 +41,8 @@ int _binary_search(int *array, size_t left, size_t right, int value)
 
 
 /**
-  * exponential_search - Performs an exponential search for a value in a sorted integer array.
+  * exponential_search - Performs an exponential search for a value in
+  	a sorted integer array.
   * @array: Pointer to the first element of the array to search.
   * @size: The number of elements in the array.
   * @value: The value to search for.
